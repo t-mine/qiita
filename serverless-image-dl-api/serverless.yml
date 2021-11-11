@@ -11,7 +11,7 @@ provider:
     - Effect: Allow
       Action:
         - s3:*
-      Resource: 'arn:aws:s3:::test-bucket/*'
+      Resource: 'arn:aws:s3:::apigateway-test-20211111/*'
 
 functions:
   getImage:
@@ -26,4 +26,3 @@ functions:
               Content-Type: "'image/png'"
             contentHandling: CONVERT_TO_BINARY
           integration: lambda
-

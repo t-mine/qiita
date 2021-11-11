@@ -8,7 +8,7 @@ const s3 = new S3({
 
 module.exports.getImage = async () => {
   const params = {
-    Bucket: 'test-bucket',
+    Bucket: 'apigateway-test-20211111',
     Key: 'test.png',
   };
   const data = await s3.getObject(params).promise();
